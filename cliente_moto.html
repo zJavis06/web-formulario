@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+      .slideshow-container {
+        position: relative;
+        max-width: 100%;
+        height: 400px;
+        margin: auto;
+      }
+    
+      .slideshow-container img {
+        border-radius: 50px;
+        width: 50%;
+        height: 100%;
+      }
+  
+      .slideshow-container .prev,
+      .slideshow-container .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px;
+        background-color: #f1f1f1;
+        color: #333;
+        cursor: pointer;
+      }
+    
+      .slideshow-container .prev {
+        border-radius: 50px;
+        left: 200px;
+      }
+   
+      .slideshow-container .next {
+        border-radius: 50px;
+        right: 200px;
+      }
+       
+        /*fin de slider*/
+        /*comienzo de menu despegable*/
+      * {
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-335px;
+				top:0px;
+			}
+			
+      .nav li ul li:hover .dos{
+				right:-189px;
+				top:0px;
+			}
+
+      .nav li ul li:hover .tres{
+				right:-183px;
+				top:0px;
+			}
+    </style>
+  </head>
+  
+  <body bgcolor="paraguas">
+    <font face="arial" color="asdff" size="5">
+      <center>
+        <h1>Cliente</h1>
+      </center>
+      <center>
+        <div class="slideshow-container">
+          <img class="slide" src="https://th.bing.com/th/id/OIP.fR9AkgUDXbnKW1Zozi27ZAHaFj?pid=ImgDet&rs=1">
+          <img class="slide" src="https://th.bing.com/th/id/R.d5320f1017643bd3b8633bca384d4b8c?rik=xG1yaUZqwM1XnQ&pid=ImgRaw&r=0">
+          <img class="slide" src="https://th.bing.com/th/id/OIP.0Pc6tL7FPB9QSBin8EFxHAHaEo?pid=ImgDet&rs=1">
+
+          <a class="prev" onclick="changeSlide(-1)">Anterior</a>
+          <a class="next" onclick="changeSlide(1)">Siguiente</a>
+        </div>    
+        <nav>
+          <div id="header">
+            <ul class="nav">
+              <li><a href="">Formularios cliente</a>
+                <ul>
+                  <li><a href="cliente_carro.html">Carro</a></li>
+                  <li><a href="cliente_tienda_de_ropa.html">tienda de ropa</a></li>
+                  <li><a href="alumno.html">biblioteca</a></li>
+                  <li><a href="cliente_celular.html">celular</a></li>
+                  <!-- <li><a href="cliente_moto.html">moto</a></li> -->
+                </ul>
+              </li>
+              <li><a href="">Formularios</a>
+                <ul>
+                  <li><a href="carro.html">Carro</a></li>
+                  <li><a href="tienda_de_ropa.html">tienda de ropa</a></li>
+                  <li><a href="biblioteca.html">biblioteca</a></li>
+                  <li><a href="celular.html">celular</a></li>
+                  <!-- <li><a href="moto.html">moto</a></li> -->
+                </ul>
+              </li>
+              <li><a href="">Trabajos</a>
+                <ul>
+                  <li><a href="">parcial 1</a>
+                    <ul>
+                      <li><a href="laura/parcial 1/2 parrafos/idnex.html">2 parrafos</a></li>
+                      <li><a href="laura/parcial 1/diferentes_tipos_de_titulos/index.html">tipos de titulos</a></li>
+                      <li><a href="laura/parcial 1/formato de estilo/index.html">formato de estilo</a></li>
+                      <li><a href="laura/parcial 1/imagenes/index.html">imagenes</a></li>
+                      <li><a href="laura/parcial 1/listas/index.html">listas</a></li>
+                      <li><a href="laura/parcial 1/tabla_estaciones_del_año/index.html">estaciones del año</a></li>
+                      <li><a href="laura/parcial 1/titulos de primer y segundo nivel/index.html">titulos primer y segundo nivel</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">parcial 2</a>
+                    <ul class="dos">
+                      <li><a href="laura/parcial 2/enlaces/enlace a correo/index.html">enlace a correo</a></li>
+                      <li><a href="laura/parcial 2/enlaces/enlace Externo/index.html">enlace externo</a></li>
+                      <li><a href="laura/parcial 2/enlaces/enlace interno/index.html">enlace interno</a></li>
+                      <li><a href="laura/parcial 2/enlaces/enlace local/index.html">enlace local</a></li>
+                      <li><a href="laura/parcial 2/EVIDENCIA 2.3 PRÁCTICAS DE FORMULARIOS EN HTML/1/index.html">Formulario 1</a></li>
+                      <li><a href="laura/parcial 2/EVIDENCIA 2.3 PRÁCTICAS DE FORMULARIOS EN HTML/2/index.html">Formulario 2</a></li>
+                      <li><a href="laura/parcial 2/EVIDENCIA 2.3 PRÁCTICAS DE FORMULARIOS EN HTML/3/index.html">Formulario 3</a></li>                         
+                    </ul>
+                  </li>
+                  <li><a href="">parcial 3</a>
+                    <ul class="tres">
+                      <li><a href="laura/parcial 3/menu vertical css/index.html">menu vertical</a></li>
+                      <li><a href="laura/parcial 3/practicas css/1.html">practicas css 1</a></li>
+                      <li><a href="laura/parcial 3/practicas css/2.html">practicas css 2</a></li>
+                      <li><a href="laura/parcial 3/practicas css/3.html">practicas css 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </center>
+      <script>
+        var slideIndex = 0;
+        var slides = document.getElementsByClassName("slide");
+    
+        showSlide();
+    
+        function showSlide() {
+          // Oculta todas las diapositivas
+          for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+    
+          // Muestra la diapositiva actual
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          slides[slideIndex - 1].style.display = "block";
+    
+          // Cambia la diapositiva cada 2 segundos
+          setTimeout(showSlide, 2000);
+        }
+    
+        function changeSlide(n) {
+          // Cambia la diapositiva por el índice n
+          slideIndex += n;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          } else if (slideIndex < 1) {
+            slideIndex = slides.length;
+          }
+    
+          // Oculta todas las diapositivas
+          for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          
+          // Muestra la diapositiva actual
+          slides[slideIndex - 1].style.display = "block";
+        }
+      </script>
+      <center>
+        <div id="formulario">
+          <form action="reg_cliente_moto.php" method="post">
+            <table border="0" align="center">
+              <tr><td>ㅤ</td></tr>
+              <tr>
+                <td>Clave primaria:</td>
+                <td>ㅤㅤ<input type="number" name="clave_primaria" size="30" placeholder="123..." style="font-size: 20px;"></td>
+              </tr>
+              <tr>
+                <td>Clave secundaria:</td>
+                <td>ㅤㅤ<input type="text" name="clave_secundaria" size="30" placeholder="A1B2C3" style="font-size: 20px;"></td>
+              </tr>
+              <tr>
+                <td>Num_de_telefono:</td>
+                <td>ㅤㅤ<input type="text" name="num_de_telefono" size="30" style="font-size: 20px;"></td>
+              </tr>
+              <tr>
+                <td>RFC:</td>
+                <td>ㅤㅤ<input type="text" name="RFC" size="30" style="font-size: 20px;"></td>
+              </tr>
+              <tr>
+                <td>Nombre:</td>
+                <td>ㅤㅤ<input type="text" name="nombre" size="30" style="font-size: 20px;"></td>
+              </tr>
+              <tr>
+                <td>Apellidos:</td>
+                <td>ㅤㅤ<input type="text" name="apellidos" size="30" style="font-size: 20px;"></td>
+              </tr>
+              <tr>
+                <td>Direccion:</td>
+                <td>ㅤㅤ<input type="text" name="direccion" size="30" style="font-size: 20px;"></td>
+              </tr>
+            </table>
+            <br>
+            <br>
+
+            <label><a href="moto.html"><input type="button" value="saltar" style="font-size: 25px;" name="saltar"></a></label>                
+            <label><input type="submit" value="agregar" style="font-size: 25px;" name="agregar"></label>
+
+          </form>
+        </div>
+      </center>
+    </font>
+    <hr color="asdff">
+    <footer>
+      <small>
+        <p style="color: #00fffd;">
+          autor Javis06
+        </p>
+      </small>
+    </footer>
+  </body>
+</html>

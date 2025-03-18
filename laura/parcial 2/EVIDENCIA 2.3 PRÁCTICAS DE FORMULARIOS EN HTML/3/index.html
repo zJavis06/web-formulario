@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+    <form>
+        Nombre: <input type="text" id="Nombre" name="nombre" size="30">
+        Apellidos: <input type="text" id="Apellidos" name="apellidos" size="30">
+        e-mail: <input type="email" id="e-mail" name="e--mail" size="30"> 
+        contraseña: <input type="password" id="contrasena" name="contrasena" size="30"> 
+
+        <br> 
+        <br> 
+        <table border="0"><tbody><tr>
+            <td>ㅤㅤㅤㅤㅤㅤㅤㅤㅤ</td>                                 <!-- puede que esta cosa no deje correr el programa -->
+            <td>Nivel de estudios:ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</td>      <!-- en widows va bien, pero en linux puede que no -->
+            <td>Interesado en los siguientes temas:</td>
+        </tr><tr></tr>
+            <tr><td>sexo:</td>
+            <td><label for="Certificado_escolar"><input id="Certificado_escolar" type="radio" name="Nivel_de_estudios" value="Certificado_escolar">Certificado escolar <br></label></td>
+            <td><label for="Muscia"><input id="Muscia" type="checkbox" name="Temas" value="Muscia">Muscia</label></td>
+        </tr><tr></tr>
+            <tr><td><label for="hombre"><input id="hombre" type="radio" name="sexo" value="hombre">hombre <br></label></td>
+            <td><label for="graduado_en_ESO"><input id="graduado_en_ESO" type="radio" name="Nivel_de_estudios" value="graduado_en_ESO">graduado en E.S.O </label></td>
+            <td><label for="Deportes"><input id="Deportes" type="checkbox" name="Temas" value="Deportes">Deportes</label></td>
+        </tr><tr></tr>
+            <tr><td><label for="mujer"><input id="mujer" type="radio" name="sexo" value="mujer">mujer</label></td>
+            <td><label for="Bachiller-Formacion_profecional"><input id="Bachiller-Formacion_profecional" type="radio" name="Nivel_de_estudios" value="Bachiller-Formacion_profecional">Bachiller - Formacion profecional</label></td>
+            <td><label for="Cine"><input id="Cine" type="checkbox" name="Temas" value="Cine">Cine</label></td>
+        </tr><tr></tr>
+            <tr><td></td>
+            <td><label for="Diplomado"><input id="Diplomado" type="radio" name="Nivel_de_estudios" value="Diplomado">Diplomado</label></td>
+            <td><label for="Libros"><input id="Libros" type="checkbox" name="Temas" value="Libros">Libros</label></td>
+        </tr><tr></tr>
+        <tr><td></td>
+        <td><label for="Licenciado_o_doctor"><input id="Licenciado_o_doctor" type="radio" name="Nivel_de_estudios" value="Licenciado_o_doctor">Licenciado o Doctor </label></td>
+        <td><label for="Ciencia"><input id="Ciencia" type="checkbox" name="Temas" value="Ciencia">Ciencia</label></td>
+        </tbody></table>
+        
+<br>
+<label for="dia">Dia de la semana que interesa recibirlo:</label><br><br>
+<select id="dia">
+<optgroup label="dias" >
+    <option>lunes</option>
+    <option>martes</option>
+    <option>miercoles</option>
+    <option>jueves</option>
+    <option>viernes</option>
+    <option>sabado</option>
+    <option>domingo</option>
+</optgroup>
+</select>
+<br>
+<br>
+su opinion: <br>
+<textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="comentario:"></textarea>
+
+    </form>
+<button>comprobar el formulario</button>
+<button>borrar todo</button>
+
+<hr>
+    <footer>
+        <small>
+          <p>
+            autor Javis06
+          </p>
+        </small>
+      </footer>
+</body>
+</html>
